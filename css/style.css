@@ -7,11 +7,11 @@
 
 video#bgvid { 
 
-position: fixed; right: 0; bottom: 0; left:0;
+position: fixed; right: 0; bottom: 0;
 
-width: auto; height: 100%;
+min-width: 100%; min-height: 100%;
 
-z-index: -100;
+width: auto; height: auto; z-index: -100;
 
 background: url(backgroundpic.jpg) no-repeat;
 
@@ -21,7 +21,13 @@ background-size: cover;
 
 
 
+@media (max-width: 1000px){
 
+html { background: url(backgroundpic.jpg) #000 no-repeat center center fixed; }
+
+#bgvid { display: none; }
+
+}
 
 
 
