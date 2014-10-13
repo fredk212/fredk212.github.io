@@ -10,7 +10,7 @@
 <body>
 
 <!-- Video Background -->
-<video autoplay loop  poster="backgroundpic.jpg" id="bgvid">
+<video autoplay="autoplay" loop  poster="backgroundpic.jpg" id="bgvid">
 
 <source src="polina.webm" type="video/webm">
 
@@ -30,9 +30,13 @@
         </button>
       </div>
       <div class="collapse navbar-collapse">
+
         <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#/about">About</a></li>                   
+          <li><a onclick ="playPause()"> Play/ Pause </a></li>
+          <li><a href="#/about">About Me</a></li> 
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Technical Skills</a></li>
+          <li><a href="#">Contact Me</a></li>                    
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -51,12 +55,12 @@
   
 
 
-
+  
   <script type="text/x-handlebars" id="about">
   
 
   <p>This is the about page</p>
-  <button id="vidpause" onclick ="playPause()"> Play / Pause </button>
+  
   
   </script>
   
