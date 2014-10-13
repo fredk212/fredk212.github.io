@@ -9,7 +9,14 @@
 </head>
 <body>
 
-<!-- Wrap all page content here -->
+<!-- Video Background -->
+<video autoplay loop  poster="backgroundpic.jpg" id="bgvid">
+
+<source src="polina.webm" type="video/webm">
+
+<source src="media/backgroundvid.mp4" type="video/mp4">
+
+</video>
 
   
   <!-- Fixed navbar -->
@@ -30,22 +37,26 @@
       </div><!--/.nav-collapse -->
     </div>
   </div>
+
   <!-- CONTENT BEGINS-->
  <script type="x-handlebars">
-  {{outlet}}
+
+  {{outlet}}   
+
+  
  </script>
 
    
   
   
-</div>
+
 
 
   <script type="text/x-handlebars" id="about">
   
 
   <p>This is the about page</p>
-  
+  <button id="vidpause" onclick ="playPause()"> Play / Pause </button>
   
   </script>
   
@@ -59,7 +70,25 @@
     {{/each}}
     </ul>
     -->
- 
+<script type ="text/javascript">
+var myVideo = document.getElementById("bgvid"); 
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+
+</script>
 
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
