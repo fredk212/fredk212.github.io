@@ -3,10 +3,8 @@
     margin: 60px;
 }
 
-.navbar-toggle {
-    position: relative;
-    float: right;   
-    margin-bottom: 50px !important;
+.navbar-toggle { 
+    margin-bottom: 100px !important;
 }
 
 video#bgvid { 
