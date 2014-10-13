@@ -10,7 +10,7 @@
 <body>
 
 <!-- Wrap all page content here -->
-<div id="wrap">
+
   
   <!-- Fixed navbar -->
   <div class="navbar navbar-default navbar-fixed-top">
@@ -31,10 +31,12 @@
     </div>
   </div>
   <!-- CONTENT BEGINS-->
- 
-    {{outlet}}
+ <script type="x-handlebars">
+  {{outlet}}
+ </script>
+
+   
   
-  <!-- CONTENT ENDS-->
   
 </div>
 
@@ -44,7 +46,7 @@
 
   <p>This is the about page</p>
   
-  </div>
+  
   </script>
   
 
