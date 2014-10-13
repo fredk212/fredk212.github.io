@@ -3,7 +3,9 @@
     margin: 60px;
 }
 
-
+.navbar-toggle{
+	margin:0px !important;
+}
 
 video#bgvid { 
 
